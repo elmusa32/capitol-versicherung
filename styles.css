@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    color: #003366;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature h2 {
+    color: #003366;
+    font-size: 1.3rem;
+}
+
+.feature p {
+    color: #333;
+}
+
+/* About Section */
+.about {
+    padding: 1.5rem;
+}
+
+.about h1 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .features {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+}
